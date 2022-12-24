@@ -3,4 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig,
+  experimental: {
+    appDir: true,
+  },
+  images: {
+    domains: ['links.papareact.com','randomuser.me','cdn.sanity.io'],
+  },
+}
