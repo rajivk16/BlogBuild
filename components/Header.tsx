@@ -8,10 +8,11 @@ function Header() {
         <Link href="/">
           <Image
             className="rounded-full"
-            src="https://randomuser.me/api/portraits/lego/2.jpg"
+            src="/minecraft.png"
             width={50}
             height={50}
             alt="logo"
+            priority
           />
         </Link>
         <h1>The Tech Blog</h1>
@@ -19,7 +20,7 @@ function Header() {
       <div>
         <Link
           href="http://rajivkulkarni-portfolio.vercel.app/"
-          className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#f7ab0a] flex items-center rounded-full text-center"
+          className="px-5 py-3 text-sm md:text-base bg-gray-900 text-white flex items-center rounded-full text-center"
         >
             Click here to visit my Portfolio
         </Link>
