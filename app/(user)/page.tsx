@@ -1,10 +1,12 @@
-import { previewData } from "next/headers";
-import { groq } from "next-sanity";
-import { client } from "../../lib/sanity.client";
-import PreviewSuspense from "../../components/PreviewSuspense";
+import BlogList from "../../components/BlogList";
 import { Preview } from "sanity";
 import PreviewBlogList from "../../components/PreviewBlogList";
-import BlogList from "../../components/BlogList";
+import PreviewSuspense from "../../components/PreviewSuspense";
+import { client } from "../../lib/sanity.client";
+import { groq } from "next-sanity";
+import { previewData } from "next/headers";
+
+export const revalidate = 60;
 
 const query = groq`
 *[_type=='post'] {
@@ -13,6 +15,8 @@ const query = groq`
     categories[]->
 } | order(_createdAt desc)
 `;
+
+
 
 export default async function HomePage() {
   if (previewData()) {

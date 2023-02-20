@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -8,7 +8,7 @@ function Header() {
         <Link href="/">
           <Image
             className="rounded-full"
-            src="https://randomuser.me/api/portraits/lego/6.jpg"
+            src="https://randomuser.me/api/portraits/lego/2.jpg"
             width={50}
             height={50}
             alt="logo"
@@ -18,7 +18,7 @@ function Header() {
       </div>
       <div>
         <Link
-          href="http://news-app-build.vercel.app/"
+          href="http://rajivkulkarni-portfolio.vercel.app/"
           className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#f7ab0a] flex items-center rounded-full text-center"
         >
             Click here to visit my Portfolio
