@@ -16,8 +16,6 @@ const query = groq`
 } | order(_createdAt desc)
 `;
 
-
-
 export default async function HomePage() {
   if (previewData()) {
     return (
@@ -30,15 +28,10 @@ export default async function HomePage() {
           </div>
         }
       >
-
-        <PreviewBlogList query={query}/>
-
-
+        <PreviewBlogList query={query} />
       </PreviewSuspense>
     );
   }
   const posts = await client.fetch(query);
-  return (
-    <BlogList posts={posts}/>
-  );
+  return <BlogList posts={posts} />;
 }
