@@ -1,4 +1,4 @@
-# Rajiv's Daily Tech Blog
+# Rajiv's Tech Blog
 
 Welcome to the repository for Rajiv's Daily Tech Blog, a personal blog where I share my insights and experiences in the world of technology. This blog is built with Next.js and Sanity.io, and it features a modern, responsive design that looks great on any device.
 
