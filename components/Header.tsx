@@ -8,14 +8,14 @@ function Header() {
         <Link href="/">
           <Image
             className="rounded-full"
-            src="/minecraft.png"
-            width={50}
-            height={50}
+            src="/bookmark.png"
+            width={60}
+            height={60}
             alt="logo"
             priority
           />
         </Link>
-        <h1>The Tech Blog</h1>
+        <h1>The Digital Quire</h1>
       </div>
       <div>
         <Link

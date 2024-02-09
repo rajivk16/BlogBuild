@@ -1,9 +1,9 @@
 export default function Head() {
   return (
     <>
-      <title>The Tech Blog</title>
+      <title>The Digital Quire</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <link rel="icon" href="/minecraft.png" />
+      <link rel="icon" href="/bookmark.png" />
     </>
   )
 }
