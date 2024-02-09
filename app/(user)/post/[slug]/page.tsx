@@ -6,11 +6,6 @@ import { client } from "../../../../lib/sanity.client";
 import { groq } from "next-sanity";
 import urlFor from "../../../../lib/urlFor";
 
-// This code is defining a function called Post which takes in a Props object as an argument.
-// The Props object has a parameter called slug which is a string.
-// The function then uses the slug parameter to query a database using the GROQ query language.
-// The query returns a Post object which is then passed to the PostPage component as a prop.
-// The PostPage component is then rendered.
 
 type Props = {
   params: {
@@ -31,8 +26,6 @@ export async function generateStaticParams() {
   return slugRoutes.map((slug) => ({ slug }));
 }
 
-/* This is a function that is querying the database for a post with a slug that matches the slug
-parameter. */
 async function Post({ params: { slug } }: Props) {
   const query = groq`
     *[_type=='post' && slug.current == $slug][0]

@@ -21,13 +21,13 @@ function BlogList({ posts }: Props) {
               
               <div className="relative w-full h-80 drop-shadow-xl group-hover:scale-105 transition-transform duration-200 ease-out">
                 <Image
-                  className="object-cover object-left lg:object-center"
+                  className="object-cover object-left lg:object-center rounded-3xl"
                   src={urlFor(post.mainImage).url()}
                   alt={post.author.name}
                   fill
                 />
 
-                <div className="absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded drop-shadow-lg text-white p-5 flex justify-between">
+                <div className="absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded-3xl drop-shadow-lg text-white p-5 flex justify-between border-t-2 border-[#7745f5]">
                   <div>
                     <p className="font-bold">{post.title}</p>
                     <p>
