@@ -11,7 +11,7 @@ function Banner() {
           favourite blog on Planet Earth 🌍
         </h2>
       </div>
-      <p className="mt-5 md:mt-2 text-black max-w-sm underline decoration-1 decoration-[#7745f5]">
+      <p className="mt-5 md:mt-2 text-black max-w-sm underline decoration-2 decoration-[#7745f5]">
         Coding & AI | Consumer Technology | Tutorials, Reviews & much more!
       </p>
     </div>
